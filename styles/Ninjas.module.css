@@ -1,11 +1,27 @@
 .single {
     padding: 2px 16px;
-    background: #fff;
+    
     display: block;
     margin: 20px 10px;
-    border-left: 8px solid #fff;
+    /* border-left: 8px solid #fff; */
+    transition: 0.3s;
 }
 
 .single:hover {
-    border-left: 8px solid #4979ff;
+    /* border-left: 8px solid #FF6E3A; */
+    color: #FF6E3A;
 }
+
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+  }

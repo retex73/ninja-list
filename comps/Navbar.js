@@ -5,11 +5,15 @@ const Navbar = () => {
     return (
         <nav>
             <div className="logo">
-                <Image src="/logo.png" alt="site logo" width={128} height={77} />
+                {/* 624 963 */}
+                <Image src="/logo-dog.png" alt="site logo" width={62} height={96} />
             </div>
-            <Link href="/"><a>Home</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <Link href="/ninjas/"><a>Ninja Listing</a></Link>
+            <div className="links">
+                <Link href="/"><a><h2>Home</h2></a></Link>
+                <Link href="/about"><a><h2>About</h2></a></Link>
+                <Link href="/dogs/"><a><h2>Dog Listing</h2></a></Link>
+            </div>
+
         </nav>
     );
 }

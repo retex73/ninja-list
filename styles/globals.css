@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
   color: #333;
   font-family: "Nunito";
 }
@@ -13,19 +18,85 @@ a {
   max-width: 960px;
   margin: 0 auto;
 }
+
+.copy {
+  padding: 20px;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.glass {
+  background: white ;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255,0.7), rgba(255,255,255, 0.3));
+  border-radius: 2rem;
+  z-index: 3;
+  backdrop-filter: blur(2rem);
+  
+}
+
+.circle1, .circle2 {
+  background: white ;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 140, 58,0.8), 
+    rgba(255,140,58, 0.3)
+  );
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%; 
+  z-index: 2;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+  z-index: 1;
+}
 nav {
-  margin: 10px auto 80px;
+  margin: 1px auto 80px;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  
 }
 nav a {
   margin-left: 12px;
 }
 nav .logo {
   margin-right: auto;
+  padding-left: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
 }
 footer {
   display: block;
